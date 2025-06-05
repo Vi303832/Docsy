@@ -4,12 +4,23 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Önemli yerler için koyu yeşil */
+  --color-primary-dark: #043F2E;
+  
+  /* Açık renk için açık yeşil */
+  --color-primary-light: #C8F169;
+  
+  /* Ara renk için orta yeşil */
+  --color-primary-medium: #2A6F2B;
+  
+  /* Beyaz için açık krem */
+  --color-off-white: #EEF2E3;
 }
 
 @media (prefers-color-scheme: dark) {
