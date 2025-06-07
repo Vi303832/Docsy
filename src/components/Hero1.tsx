@@ -203,7 +203,7 @@ function Hero1() {
 
                     </div>
 
-                    <div className='px-29 py-25  rounded-2xl ml-10 mb-20 bg-green-600 relative flex justify-center items-center'>
+                    <div className='px-31 py-25  rounded-2xl ml-10 mb-20 bg-green-600 relative flex justify-center items-center'>
                         {/* Corner triangle SVGs for notebook container */}
                         <svg className="absolute top-2 left-2 w-6 h-6" viewBox="0 0 24 24" fill="none">
                             <path d="M0 0 L24 0 L0 24 Z" fill="#166534" opacity="0.6" />
