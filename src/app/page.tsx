@@ -2,6 +2,8 @@ import Image from "next/image";
 import Hero1 from "../components/Hero1";
 import Header from "../components/Header";
 import Slider from "../components/Slider";
+import Section from "../components/Section";
+import Content from "../components/Content";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <Header />
       <Hero1 />
       <Slider />
+      <Section />
+      <Content />
     </div>
   );
 }
