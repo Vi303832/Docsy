@@ -1,8 +1,13 @@
 import React from 'react'
+import hero2 from "../../public/hero2.jpeg"
+import bg from "../../public/bg.png"
+import Image from 'next/image'
 
 function Hero1() {
     return (
+
         <section className="py-20 flex justify-center">
+
             <div className='bg-amber-800  relative inline-block '>
 
 
@@ -12,8 +17,10 @@ function Hero1() {
                         <div className='text-8xl font-sans py-5   rounded-xl rounded-br-none bg-amber-300  whitespace-nowrap  grow relative text-center' >Contract Intelligence</div>
 
                         <div className='flex flex-row justify-between'>
-                            <div className='py-15 px-50 mt-10 mr-10  rounded-t-xl bg-neutral-200' />
 
+                            <div className='py-15 px-50 mt-10 mr-10  rounded-t-xl  relative overflow-hidden '>
+                                <Image src={bg} alt="bg" className='w-full h-full object-cover object-bottom-left relative  ' fill />
+                            </div>
                             <div className='flex flex-col'>
                                 <div className='text-8xl font-sans  mb-10  rounded-bl-xl rounded-br-none bg-amber-300  whitespace-nowrap px-3 grow relative ' >built around</div>
 
@@ -31,8 +38,14 @@ function Hero1() {
                 </div>
                 <div className='flex flex-row '>
                     <div>
-                        <div className='py-40 px-90   bg-neutral-200 rounded-r-2xl' />
-
+                        <div className='py-42 px-90 bg-neutral-200 rounded-r-2xl relative overflow-hidden'>
+                            <Image
+                                src={hero2}
+                                alt="hero2"
+                                className='w-full h-full object-cover object-bottom-left relative  '
+                                fill
+                            />
+                        </div>
                     </div>
                     <div className=' relative ' >
                         <div className=" text-[92px]  ml-10 relative bottom-10 bg-amber-300 font-sans whitespace-nowrap text-start px-3 rounded-xl rounded-tl-none ">
