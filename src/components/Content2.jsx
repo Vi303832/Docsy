@@ -28,7 +28,7 @@ function Content2() {
                                     <Image
                                         src={box1}
                                         alt="Workspace dashboard preview"
-                                        className="shadow-2xl rounded-2xl group-hover:shadow-[#BEF264]/30 transition-all duration-500"
+                                        className="shadow-2xl rounded-2xl group-hover:shadow-[#BEF264]/30 transition-all duration-500 hover:object-bottom! object-top!"
                                         style={{ objectFit: "cover", width: "100%", height: "100%" }}
                                         priority
                                     />
@@ -59,7 +59,7 @@ function Content2() {
                                         <Image
                                             src={box2}
                                             alt="Collaboration workspace"
-                                            className="shadow-2xl rounded-2xl object-top group-hover:shadow-[#C8F169]/30 transition-all duration-500"
+                                            className="shadow-2xl rounded-2xl object-top group-hover:shadow-[#C8F169]/30 transition-all duration-500 hover:object-bottom!   "
                                             style={{ objectFit: "cover", width: "100%", height: "100%" }}
                                         />
                                     </div>
@@ -68,16 +68,16 @@ function Content2() {
                         </div>
                     </div>
 
-                    {/* Right single tall box - Başta beyaz, hover'da yeşil-mavi karışık tema */}
+                    {/* Right single tall box - Başta beyaz, hover'da yeşil tema */}
                     <div className="md:col-span-1">
-                        <div className="relative w-full rounded-3xl shadow-2xl overflow-hidden min-h-[500px] md:min-h-[650px] flex flex-col group bg-white transition-all duration-500 ease-in-out hover:bg-gradient-to-br hover:from-[#E0FCFF] hover:via-[#B2F7EF] hover:to-[#C8F169]/60 hover:bg-opacity-90">
+                        <div className="relative w-full rounded-3xl shadow-2xl overflow-hidden min-h-[500px] md:min-h-[650px] flex flex-col group bg-white transition-all duration-500 ease-in-out hover:bg-gradient-to-br hover:from-emerald-300 hover:via-emerald-200 hover:to-emerald-100">
                             {/* Header section */}
                             <div className="p-6 md:p-8">
                                 <div className="flex items-center justify-between mb-4">
-                                    <h2 className="text-[#1B3A2F] font-bold text-lg md:text-xl leading-tight group-hover:text-[#3DA58A] transition-colors duration-500">
+                                    <h2 className="text-[#1B3A2F] font-bold text-lg md:text-xl leading-tight group-hover:text-[#064e3b] transition-colors duration-500">
                                         Save and share your favorite templates
                                     </h2>
-                                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#B2F7EF]/60 text-[#1B3A2F] flex-shrink-0 group-hover:bg-[#C8F169]/60 group-hover:scale-110 transition-all duration-500">
+                                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#C8F169] text-[#1B3A2F] flex-shrink-0 group-hover:bg-emerald-400 group-hover:scale-110 transition-all duration-500">
                                         <FaArrowRight size={14} />
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@ function Content2() {
                                 </div>
                             </div>
                             {/* Hover glow effect */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#C8F169]/10 via-transparent to-[#B2F7EF]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                            <div className="absolute inset-0 bg-gradient-to-br from-emerald-300/10 via-transparent to-emerald-200/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
                         </div>
                     </div>
                 </div>
