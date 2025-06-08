@@ -48,53 +48,56 @@ function Content() {
                 {/* Feature Cards */}
                 <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
                     {/* Card 1 - AI Contract Analysis */}
-                    <div className="bg-gradient-to-br from-amber-300 via-lime-300 to-emerald-300 rounded-2xl p-8 relative overflow-hidden group hover:scale-105 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-[#FFE066] via-[#C8F169] to-[#B8E553] rounded-2xl p-8 relative overflow-hidden group hover:shadow-2xl hover:shadow-[#C8F169]/30 transition-all duration-500">
+                        {/* Gradient overlay effect */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#043F2E]/5 via-transparent to-[#1a5d1e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+
                         <div className="relative z-10">
                             <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-xl font-semibold text-slate-800">
+                                <h3 className="text-xl font-semibold text-[#043F2E] group-hover:text-[#022A1F] transition-colors duration-300">
                                     AI-Powered Contract Analysis & Review
                                 </h3>
-                                <div className="bg-slate-800/20 rounded-full p-2">
-                                    <svg className="w-6 h-6 text-slate-800" fill="currentColor" viewBox="0 0 20 20">
+                                <div className="bg-[#043F2E]/20 rounded-full p-2 group-hover:bg-[#043F2E]/30 group-hover:scale-110 transition-all duration-300">
+                                    <svg className="w-6 h-6 text-[#043F2E]" fill="currentColor" viewBox="0 0 20 20">
                                         <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                                     </svg>
                                 </div>
                             </div>
 
                             {/* Contract Document illustration */}
-                            <div className="bg-slate-800/20 rounded-2xl p-4 mb-4">
+                            <div className="bg-[#043F2E]/15 rounded-2xl p-4 mb-4 group-hover:bg-[#043F2E]/20 transition-all duration-300">
                                 <div className="space-y-2">
                                     <div className="flex items-center space-x-2">
-                                        <div className="w-3 h-3 bg-emerald-600 rounded-full"></div>
-                                        <div className="h-2 bg-slate-700/60 rounded flex-1"></div>
+                                        <div className="w-3 h-3 bg-[#1a5d1e] rounded-full group-hover:scale-110 transition-transform duration-300"></div>
+                                        <div className="h-2 bg-[#043F2E]/60 rounded flex-1"></div>
                                     </div>
-                                    <div className="h-1 bg-slate-700/40 rounded w-4/5"></div>
-                                    <div className="h-1 bg-slate-700/40 rounded w-3/5"></div>
+                                    <div className="h-1 bg-[#043F2E]/40 rounded w-4/5"></div>
+                                    <div className="h-1 bg-[#043F2E]/40 rounded w-3/5"></div>
                                     <div className="flex items-center space-x-2 mt-3">
-                                        <div className="w-3 h-3 bg-amber-600 rounded-full"></div>
-                                        <div className="h-2 bg-slate-700/60 rounded flex-1"></div>
+                                        <div className="w-3 h-3 bg-[#B8E553] rounded-full group-hover:scale-110 transition-transform duration-300 delay-75"></div>
+                                        <div className="h-2 bg-[#043F2E]/60 rounded flex-1"></div>
                                     </div>
-                                    <div className="h-1 bg-slate-700/40 rounded w-2/3"></div>
-                                    <div className="h-1 bg-slate-700/40 rounded w-5/6 mt-3"></div>
+                                    <div className="h-1 bg-[#043F2E]/40 rounded w-2/3"></div>
+                                    <div className="h-1 bg-[#043F2E]/40 rounded w-5/6 mt-3"></div>
                                     <div className="flex items-center space-x-2 mt-2">
-                                        <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                                        <div className="h-2 bg-slate-700/60 rounded w-3/4"></div>
+                                        <div className="w-3 h-3 bg-[#FF6B6B] rounded-full group-hover:scale-110 transition-transform duration-300 delay-150"></div>
+                                        <div className="h-2 bg-[#043F2E]/60 rounded w-3/4"></div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Additional features text */}
-                            <div className="text-sm text-slate-800/80 space-y-1">
+                            <div className="text-sm text-[#043F2E]/80 space-y-1 group-hover:text-[#043F2E] transition-colors duration-300">
                                 <div className="flex items-center space-x-2">
-                                    <div className="w-2 h-2 bg-emerald-600 rounded-full"></div>
+                                    <div className="w-2 h-2 bg-[#1a5d1e] rounded-full"></div>
                                     <span>Risk Detection</span>
                                 </div>
                                 <div className="flex items-center space-x-2">
-                                    <div className="w-2 h-2 bg-amber-600 rounded-full"></div>
+                                    <div className="w-2 h-2 bg-[#B8E553] rounded-full"></div>
                                     <span>Clause Suggestions</span>
                                 </div>
                                 <div className="flex items-center space-x-2">
-                                    <div className="w-2 h-2 bg-cyan-600 rounded-full"></div>
+                                    <div className="w-2 h-2 bg-[#4ECDC4] rounded-full"></div>
                                     <span>Compliance Check</span>
                                 </div>
                             </div>
@@ -102,21 +105,24 @@ function Content() {
                     </div>
 
                     {/* Card 2 - Smart Document Search */}
-                    <div className="bg-gradient-to-br from-lime-300 via-emerald-300 to-cyan-400 rounded-2xl p-8 relative overflow-hidden group hover:scale-105 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-[#4ECDC4] via-[#5FDDD4] to-[#6FE9D6] rounded-2xl p-8 relative overflow-hidden group hover:shadow-2xl hover:shadow-[#4ECDC4]/30 transition-all duration-500">
+                        {/* Gradient overlay effect */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#043F2E]/5 via-transparent to-[#1a5d1e]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+
                         <div className="relative z-10">
                             <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-xl font-semibold text-slate-800">
+                                <h3 className="text-xl font-semibold text-white group-hover:text-[#F0FFF4] transition-colors duration-300">
                                     Smart Legal Document Search & Discovery
                                 </h3>
-                                <div className="bg-slate-800/20 rounded-full p-2">
-                                    <svg className="w-6 h-6 text-slate-800" fill="currentColor" viewBox="0 0 20 20">
+                                <div className="bg-white/20 rounded-full p-2 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                                         <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                                     </svg>
                                 </div>
                             </div>
 
                             {/* Search interface mockup */}
-                            <div className="bg-white/95 rounded-xl p-4 mb-4">
+                            <div className="bg-white/95 rounded-xl p-4 mb-4 group-hover:bg-white transition-all duration-300 group-hover:shadow-lg">
                                 <div className="flex items-center space-x-2 mb-3">
                                     <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
                                         <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
@@ -124,10 +130,10 @@ function Content() {
                                     <div className="flex-1 text-gray-700 text-sm">Search contracts, clauses, terms...</div>
                                 </div>
                                 <div className="space-y-2">
-                                    <div className="bg-[#043F2E] px-3 py-1 rounded text-[#C8F169] text-sm inline-block font-semibold">
+                                    <div className="bg-[#043F2E] px-3 py-1 rounded text-[#C8F169] text-sm inline-block font-semibold group-hover:bg-[#1a5d1e] transition-colors duration-300">
                                         NDA Agreement
                                     </div>
-                                    <div className="bg-gray-200 px-3 py-1 rounded text-gray-700 text-sm inline-block">
+                                    <div className="bg-gray-200 px-3 py-1 rounded text-gray-700 text-sm inline-block group-hover:bg-[#4ECDC4]/20 group-hover:text-[#043F2E] transition-colors duration-300">
                                         Employment Contract
                                     </div>
                                 </div>
@@ -136,22 +142,22 @@ function Content() {
 
                             {/* Search filters */}
                             <div className="space-y-2 mt-4">
-                                <div className="text-sm font-semibold text-[#043F2E] mb-2">Quick Filters:</div>
+                                <div className="text-sm font-semibold text-white mb-2">Quick Filters:</div>
                                 <div className="flex flex-wrap gap-2">
-                                    <span className="bg-[#043F2E]/10 text-[#043F2E] px-2 py-1 rounded-full text-xs">Contracts</span>
-                                    <span className="bg-[#043F2E]/10 text-[#043F2E] px-2 py-1 rounded-full text-xs">NDAs</span>
-                                    <span className="bg-[#043F2E]/10 text-[#043F2E] px-2 py-1 rounded-full text-xs">Policies</span>
+                                    <span className="bg-white/20 text-white px-2 py-1 rounded-full text-xs group-hover:bg-white/30 transition-colors duration-300">Contracts</span>
+                                    <span className="bg-white/20 text-white px-2 py-1 rounded-full text-xs group-hover:bg-white/30 transition-colors duration-300">NDAs</span>
+                                    <span className="bg-white/20 text-white px-2 py-1 rounded-full text-xs group-hover:bg-white/30 transition-colors duration-300">Policies</span>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
-                                    <span className="bg-[#043F2E]/10 text-[#043F2E] px-2 py-1 rounded-full text-xs">Templates</span>
-                                    <span className="bg-[#043F2E]/10 text-[#043F2E] px-2 py-1 rounded-full text-xs">Reviews</span>
+                                    <span className="bg-white/20 text-white px-2 py-1 rounded-full text-xs group-hover:bg-white/30 transition-colors duration-300">Templates</span>
+                                    <span className="bg-white/20 text-white px-2 py-1 rounded-full text-xs group-hover:bg-white/30 transition-colors duration-300">Reviews</span>
                                 </div>
                             </div>
                         </div>
 
                         {/* Legal search icon */}
-                        <div className="absolute bottom-4 right-4">
-                            <svg className="w-6 h-6 text-[#043F2E] opacity-30" fill="currentColor" viewBox="0 0 20 20">
+                        <div className="absolute bottom-4 right-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg className="w-6 h-6 text-white opacity-30 group-hover:opacity-50" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
                                 <path fillRule="evenodd" d="M4 5a2 2 0 012-2v1a2 2 0 00-2 2v6a2 2 0 002 2h8a2 2 0 002-2V6a2 2 0 00-2-2V3a2 2 0 012 2v6a4 4 0 01-4 4H6a4 4 0 01-4-4V5z" clipRule="evenodd" />
                             </svg>
@@ -159,28 +165,31 @@ function Content() {
                     </div>
 
                     {/* Card 3 - Real-time Legal Collaboration */}
-                    <div className="bg-gradient-to-br from-[#043F2E] to-[#1a5d1e] rounded-2xl p-8 relative overflow-hidden group hover:scale-105 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-[#043F2E] via-[#1a5d1e] to-[#4ECDC4] rounded-2xl p-8 relative overflow-hidden group hover:shadow-2xl hover:shadow-[#C8F169]/30 transition-all duration-500">
+                        {/* Gradient overlay effect */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#C8F169]/5 via-transparent to-[#4ECDC4]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+
                         <div className="relative z-10">
                             <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-xl font-bold font-serif tracking-wide">
+                                <h3 className="text-xl font-bold font-serif tracking-wide text-white group-hover:text-[#C8F169] transition-colors duration-300">
                                     Real-time Legal Team Collaboration & Review
                                 </h3>
-                                <div className="bg-white/20 rounded-full p-2">
-                                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <div className="bg-[#C8F169]/20 rounded-full p-2 group-hover:bg-[#C8F169]/30 group-hover:scale-110 transition-all duration-300">
+                                    <svg className="w-6 h-6 text-[#C8F169]" fill="currentColor" viewBox="0 0 20 20">
                                         <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                                     </svg>
                                 </div>
                             </div>
 
                             {/* Collaboration interface mockup */}
-                            <div className="bg-white/95 rounded-xl p-4 space-y-3">
+                            <div className="bg-white/95 rounded-xl p-4 space-y-3 group-hover:bg-white transition-all duration-300 group-hover:shadow-lg">
                                 <div className="flex justify-between items-center">
                                     <span className="text-gray-600 text-xs">Comments  Reviews  Approvals  Legal Team  Clients</span>
                                 </div>
 
                                 <div className="space-y-3 text-xs">
                                     <div className="flex items-start space-x-2">
-                                        <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold">LT</div>
+                                        <div className="w-6 h-6 bg-[#4ECDC4] rounded-full flex items-center justify-center text-white text-xs font-bold group-hover:scale-110 transition-transform duration-300">LT</div>
                                         <div className="flex-1">
                                             <span className="text-gray-700 font-semibold">Legal Team</span>
                                             <span className="text-gray-500 ml-2">2 min ago</span>
@@ -189,7 +198,7 @@ function Content() {
                                     </div>
 
                                     <div className="flex items-start space-x-2">
-                                        <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs font-bold">SM</div>
+                                        <div className="w-6 h-6 bg-[#1a5d1e] rounded-full flex items-center justify-center text-white text-xs font-bold group-hover:scale-110 transition-transform duration-300 delay-75">SM</div>
                                         <div className="flex-1">
                                             <span className="text-gray-700 font-semibold">Sarah Miller</span>
                                             <span className="text-gray-500 ml-2">5 min ago</span>
@@ -198,7 +207,7 @@ function Content() {
                                     </div>
 
                                     <div className="flex items-start space-x-2">
-                                        <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs font-bold">CL</div>
+                                        <div className="w-6 h-6 bg-[#C8F169] rounded-full flex items-center justify-center text-[#043F2E] text-xs font-bold group-hover:scale-110 transition-transform duration-300 delay-150">CL</div>
                                         <div className="flex-1">
                                             <span className="text-gray-700 font-semibold">Client Legal</span>
                                             <span className="text-gray-500 ml-2">12 min ago</span>
@@ -210,8 +219,8 @@ function Content() {
                         </div>
 
                         {/* Collaboration icon */}
-                        <div className="absolute bottom-4 right-4">
-                            <svg className="w-6 h-6 text-[#C8F169] opacity-60" fill="currentColor" viewBox="0 0 20 20">
+                        <div className="absolute bottom-4 right-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg className="w-6 h-6 text-[#C8F169] opacity-60 group-hover:opacity-80" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd" />
                             </svg>
                         </div>
