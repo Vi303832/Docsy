@@ -44,21 +44,24 @@ export default function Extra() {
     // Meaningful words for legal theme: LEGAL, DOCS, SMART, TEAM, WORK, AI
     const orbitElements = [
         // LEGAL
+        { type: "avatar", content: "/placeholder.svg?height=40&width=40" },
         { type: "letter", content: "L", color: "#C8F169" },
         { type: "letter", content: "E", color: "#B8E553" },
-        { type: "avatar", content: "/placeholder.svg?height=40&width=40" },
+
         { type: "letter", content: "G", color: "#C8F169" },
         { type: "letter", content: "A", color: "#B8E553" },
         { type: "letter", content: "L", color: "#C8F169" },
         // DOCS  
-        { type: "letter", content: "D", color: "#4ECDC4" },
         { type: "avatar", content: "/placeholder.svg?height=40&width=40" },
+        { type: "letter", content: "D", color: "#4ECDC4" },
+
         { type: "letter", content: "O", color: "#5FDDD4" },
         { type: "letter", content: "C", color: "#4ECDC4" },
         { type: "letter", content: "S", color: "#5FDDD4" },
         // SMART
-        { type: "letter", content: "S", color: "#A8D943" },
         { type: "avatar", content: "/placeholder.svg?height=40&width=40" },
+        { type: "letter", content: "S", color: "#A8D943" },
+
         { type: "letter", content: "M", color: "#B8E553" },
         { type: "letter", content: "A", color: "#A8D943" },
         { type: "letter", content: "R", color: "#B8E553" },
@@ -137,7 +140,7 @@ export default function Extra() {
 
             {/* FAQ Section */}
             <div className="px-6 py-24">
-                <div className="max-w-6xl mx-auto">
+                <div className="px-22">
                     <div className="mb-16">
                         <h2 className="text-7xl md:text-8xl lg:text-9xl font-black text-white leading-none mb-6">
                             Legal.
@@ -186,21 +189,7 @@ export default function Extra() {
                         ))}
                     </div>
 
-                    {/* Call to Action */}
-                    <div className="mt-20 text-center">
-                        <div className="bg-gradient-to-r from-[#C8F169]/10 to-[#4ECDC4]/10 backdrop-blur-sm rounded-3xl border border-[#C8F169]/30 p-12">
-                            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                                Ready to Transform Your Legal Practice?
-                            </h3>
-                            <p className="text-emerald-200 text-lg mb-8 max-w-2xl mx-auto">
-                                Join thousands of legal professionals who have already revolutionized their workflow with our intelligent platform.
-                            </p>
-                            <button className="inline-flex items-center px-10 py-4 bg-gradient-to-r from-[#C8F169] to-[#4ECDC4] text-[#043F2E] font-bold rounded-xl hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl">
-                                Get Started Today
-                                <span className="ml-2">→</span>
-                            </button>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
