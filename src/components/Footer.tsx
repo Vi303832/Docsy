@@ -3,7 +3,7 @@ import { FiFileText, FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 
 function Footer() {
     return (
-        <footer className=" bg-[#043F2E]  text-white relative overflow-hidden">
+        <footer className="bg-[#043F2E] text-white relative overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute top-10 right-20 w-3 h-3 bg-[#C8F169] rounded-full animate-pulse"></div>
             <div className="absolute top-20 right-32 w-2 h-2 bg-yellow-400 rounded-full animate-pulse delay-100"></div>
@@ -29,7 +29,7 @@ function Footer() {
                         </div>
 
                         <p className="text-[#EEF2E3] leading-relaxed">
-                            AI destekli hukuki belge yönetimi ve analiz platformu. Karmaşık hukuki işlemleri basitleştirin, akıllı çözümlerle verimliliği artırın.
+                            AI-powered legal document management and analysis platform. Simplify complex legal processes, increase efficiency with smart solutions.
                         </p>
 
                         {/* Contact Info */}
@@ -40,61 +40,61 @@ function Footer() {
                             </div>
                             <div className="flex items-center gap-3 text-[#C8F169]">
                                 <FiPhone className="w-4 h-4" />
-                                <span className="text-sm">+90 212 000 00 00</span>
+                                <span className="text-sm">+1 (555) 123-4567</span>
                             </div>
                             <div className="flex items-center gap-3 text-[#C8F169]">
                                 <FiMapPin className="w-4 h-4" />
-                                <span className="text-sm">İstanbul, Türkiye</span>
+                                <span className="text-sm">New York, USA</span>
                             </div>
                         </div>
                     </div>
 
-                    {/* Ürünler */}
+                    {/* Products */}
                     <div>
                         <h3 className="text-[#C8F169] font-semibold text-lg mb-6 relative">
-                            Ürünler
+                            Products
                             <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-gradient-to-r from-[#C8F169] to-transparent"></div>
                         </h3>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">AI Sözleşme Analizi</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Akıllı Belge Arama</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Hukuki İş Akışları</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Ekip Yönetimi</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Uyumluluk Takibi</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Risk Analizi</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">AI Contract Analysis</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Smart Document Search</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Legal Workflows</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Team Management</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Compliance Tracking</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Risk Analysis</a></li>
                         </ul>
                     </div>
 
-                    {/* Çözümler */}
+                    {/* Solutions */}
                     <div>
                         <h3 className="text-[#C8F169] font-semibold text-lg mb-6 relative">
-                            Çözümler
+                            Solutions
                             <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-gradient-to-r from-[#C8F169] to-transparent"></div>
                         </h3>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Hukuk Büroları</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Kurumsal Şirketler</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Girişimler</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Freelance Avukatlar</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Hukuk Fakülteleri</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Devlet Kurumları</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Law Firms</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Corporate Companies</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Startups</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Freelance Lawyers</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Law Schools</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Government Agencies</a></li>
                         </ul>
                     </div>
 
-                    {/* Kaynaklar & Destek */}
+                    {/* Resources & Support */}
                     <div>
                         <h3 className="text-[#C8F169] font-semibold text-lg mb-6 relative">
-                            Kaynaklar & Destek
+                            Resources & Support
                             <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-gradient-to-r from-[#C8F169] to-transparent"></div>
                         </h3>
                         <ul className="space-y-3">
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Dokümantasyon</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">API Rehberi</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Video Eğitimler</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Documentation</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">API Guide</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Video Tutorials</a></li>
                             <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Blog</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Topluluk Forumu</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Destek Merkezi</a></li>
-                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">İletişim</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Community Forum</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Support Center</a></li>
+                            <li><a href="#" className="text-[#EEF2E3] hover:text-[#C8F169] transition-colors duration-200">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -106,15 +106,16 @@ function Footer() {
 
                     <div className="relative z-10 text-center max-w-2xl mx-auto">
                         <h3 className="text-2xl font-semibold text-[#C8F169] mb-4">
-                            Hukuk Teknolojisi Güncellemelerini Kaçırmayın
+                            Don't Miss Legal Tech Updates
                         </h3>
                         <p className="text-[#EEF2E3] mb-6">
-                            En son AI gelişmeleri, hukuki teknoloji trendleri ve platform güncellemeleri için bültenimize abone olun.
+                            Subscribe to our newsletter for the latest AI developments, legal tech trends, and platform updates.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                             <input
                                 type="email"
-                                placeholder="E-posta adresiniz"
+                                placeholder="Your email address"
+
                                 className="flex-1 px-4 py-3 rounded-lg bg-white/10 backdrop-blur-sm border border-[#C8F169]/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C8F169] focus:border-transparent"
                             />
                             <button className="bg-gradient-to-r from-[#C8F169] to-[#2A6F2B] text-[#043F2E] font-semibold px-6 py-3 rounded-lg hover:shadow-lg hover:shadow-[#C8F169]/30 transition-all duration-200 hover:scale-105">

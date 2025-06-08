@@ -2,7 +2,7 @@ import React from 'react'
 
 function Cto() {
     return (
-        <section className="bg-gradient-to-b from-[#043F2E] from-0% via-[#1a5d1e] via-70% to-[#043F2E] to-100% text-white relative overflow-hidden py-32">
+        <section className="bg-transparent text-white relative overflow-hidden py-32">
             {/* Background decorative elements */}
             <div className="absolute top-20 right-32 w-4 h-4 bg-[#C8F169] rounded-full animate-pulse"></div>
             <div className="absolute top-32 right-20 w-3 h-3 bg-[#4ECDC4] rounded-full animate-pulse delay-100"></div>
