@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Slider from "../components/Slider";
 import Section from "../components/Section";
 import Content from "../components/Content";
+import Content2 from "../components/Content2";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Slider />
       <Section />
       <Content />
+
     </div>
   );
 }
