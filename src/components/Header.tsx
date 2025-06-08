@@ -33,14 +33,8 @@ export default function Header() {
 
             {/* Logo Section */}
             <div className="flex items-center gap-4 relative z-10 group">
-                <div className="relative p-2.5 bg-gradient-to-br from-[#C8F169] to-[#B8E553] rounded-xl shadow-lg shadow-[#C8F169]/20 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[#C8F169]/30">
-                    {/* Decorative corner elements */}
-                    <svg className="absolute -top-1 -right-1 w-4 h-4" viewBox="0 0 16 16" fill="none">
-                        <path d="M16 0 L16 16 L0 0 Z" fill="#043F2E" opacity="0.2" />
-                    </svg>
-                    <svg className="absolute -bottom-1 -left-1 w-4 h-4" viewBox="0 0 16 16" fill="none">
-                        <path d="M0 16 L0 0 L16 16 Z" fill="#043F2E" opacity="0.2" />
-                    </svg>
+                <div className="relative p-2.5 bg-gradient-to-br from-[#C8F169] to-[#B8E553] rounded-xl shadow-lg shadow-[#C8F169]/10 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[#C8F169]/30">
+
                     <FiFileText size={20} className="text-[#043F2E] relative z-10" />
                 </div>
                 <div className="flex flex-col">
