@@ -7,9 +7,9 @@ import box2 from "../../public/box2.png"
 function Content2() {
     return (
         <section className="relative">
-            <div className="container mx-auto px-6 py-10">
+            <div className="container mx-auto px-24 py-10">
 
-                <div className="w-full mx-auto px-2 md:px-8 lg:px-24 py-8 md:py-16">
+                <div className="w-full mx-auto ">
                     <div className="relative w-full bg-white/95 rounded-3xl shadow-2xl flex flex-col overflow-hidden" style={{ boxSizing: "border-box" }}>
                         {/* Header */}
                         <div className="flex items-center justify-between px-6 md:px-12 pt-8 pb-0">
@@ -38,7 +38,7 @@ function Content2() {
                 </div>
 
                 {/* 2 boxes layout like photo */}
-                <div className="grid md:grid-cols-3 gap-8 px-24 mx-auto">
+                <div className="grid md:grid-cols-3 gap-8  mt-10">
                     {/* Left big box - same style as box1 with box2.png inside */}
                     <div className="md:col-span-2">
                         <div className="relative w-full bg-white/95 rounded-3xl shadow-2xl flex flex-col overflow-hidden min-h-[500px] md:min-h-[650px]" style={{ boxSizing: "border-box" }}>
@@ -54,11 +54,11 @@ function Content2() {
                             {/* Image - bottom right, large, only top/left margin */}
                             <div className="flex-1 relative">
                                 <div className="absolute left-4 md:left-10 top-6 right-0 bottom-0 flex items-end justify-end">
-                                    <div className="w-[97%] md:w-[95%] h-[90%]">
+                                    <div className="w-[97%] h-[95%] rounded-2xl">
                                         <Image
                                             src={box2}
                                             alt="Collaboration workspace"
-                                            className="shadow-2xl rounded-2xl"
+                                            className="shadow-2xl rounded-2xl object-top "
                                             style={{ objectFit: "cover", width: "100%", height: "100%" }}
                                         />
                                     </div>

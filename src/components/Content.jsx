@@ -217,8 +217,9 @@ function Content() {
                         </div>
                     </div>
                 </div>
+                <Content2 />
             </div>
-            <Content2 />
+
         </section>
     )
 }
