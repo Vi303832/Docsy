@@ -131,7 +131,7 @@ function Footer() {
 
                         {/* Copyright & Legal */}
                         <div className="text-[#EEF2E3]/80 text-sm space-y-2 md:space-y-0">
-                            <p>&copy; 2024 Docsy. Tüm hakları saklıdır.</p>
+                            <p>&copy; 2025 Docsy. Tüm hakları saklıdır.</p>
                             <div className="flex flex-wrap gap-4 mt-2">
                                 <a href="#" className="hover:text-[#C8F169] transition-colors">Gizlilik Politikası</a>
                                 <a href="#" className="hover:text-[#C8F169] transition-colors">Kullanım Şartları</a>

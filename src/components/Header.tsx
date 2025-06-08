@@ -31,81 +31,101 @@ export default function Header() {
                 </defs>
             </svg>
 
-            {/* Sol taraf: Logo */}
-            <div className="flex items-center gap-3 relative z-10">
-                <div className="relative p-2 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-xl">
-                    {/* Logo corner triangles */}
-                    <svg className="absolute top-0 right-0 w-3 h-3" viewBox="0 0 12 12" fill="none">
-                        <path d="M12 0 L12 12 L0 0 Z" fill="#065f46" opacity="0.4" />
+            {/* Logo Section */}
+            <div className="flex items-center gap-4 relative z-10 group">
+                <div className="relative p-2.5 bg-gradient-to-br from-[#C8F169] to-[#B8E553] rounded-xl shadow-lg shadow-[#C8F169]/20 transition-all duration-300 group-hover:scale-105 group-hover:shadow-[#C8F169]/30">
+                    {/* Decorative corner elements */}
+                    <svg className="absolute -top-1 -right-1 w-4 h-4" viewBox="0 0 16 16" fill="none">
+                        <path d="M16 0 L16 16 L0 0 Z" fill="#043F2E" opacity="0.2" />
                     </svg>
-                    <FiFileText size={18} className="text-white relative z-10" />
+                    <svg className="absolute -bottom-1 -left-1 w-4 h-4" viewBox="0 0 16 16" fill="none">
+                        <path d="M0 16 L0 0 L16 16 Z" fill="#043F2E" opacity="0.2" />
+                    </svg>
+                    <FiFileText size={20} className="text-[#043F2E] relative z-10" />
                 </div>
-                <span className="font-bold text-lg tracking-tight bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                    Docsy
-                </span>
+                <div className="flex flex-col">
+                    <span className="font-bold text-xl tracking-tight bg-gradient-to-r from-[#C8F169] to-[#B8E553] bg-clip-text text-transparent">
+                        Docsy
+                    </span>
+                    <span className="text-xs text-emerald-200/80 font-medium tracking-wide">
+                        Legal Intelligence
+                    </span>
+                </div>
             </div>
 
-            {/* Ortadaki nav */}
+            {/* Center Navigation */}
             <nav className="absolute left-1/2 -translate-x-1/2 z-10">
-                <div className="flex items-center gap-6 bg-gradient-to-r from-lime-300/90 to-emerald-300/90 backdrop-blur-md px-8 py-3 rounded-full shadow-xl border border-emerald-400/30 text-sm font-semibold relative">
-                    {/* Nav corner triangles */}
-                    <svg className="absolute top-1 left-1 w-4 h-4" viewBox="0 0 16 16" fill="none">
-                        <path d="M0 0 L16 0 L0 16 Z" fill="#14532d" opacity="0.3" />
+                <div className="flex items-center gap-4 bg-gradient-to-r from-lime-100/80 to-lime-200/80 backdrop-blur-sm px-8 py-2.5 rounded-full shadow-lg border border-lime-200/50 text-sm font-medium relative group hover:border-lime-300/60 transition-all duration-300">
+                    {/* Minimal corner accents */}
+                    <svg className="absolute top-0 left-0 w-3 h-3" viewBox="0 0 12 12" fill="none">
+                        <path d="M0 0 L12 0 L0 12 Z" fill="#14532d" opacity="0.15" />
                     </svg>
-                    <svg className="absolute bottom-1 right-1 w-4 h-4" viewBox="0 0 16 16" fill="none">
-                        <path d="M16 16 L0 16 L16 0 Z" fill="#14532d" opacity="0.3" />
+                    <svg className="absolute bottom-0 right-0 w-3 h-3" viewBox="0 0 12 12" fill="none">
+                        <path d="M12 12 L0 12 L12 0 Z" fill="#14532d" opacity="0.15" />
                     </svg>
 
-                    <Link href="#features" className="hover:text-emerald-700 transition-colors duration-200 hover:scale-105 transform">
+                    <Link
+                        href="#features"
+                        className="relative px-2 py-1 text-lime-800/90 hover:text-lime-900 transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-lime-500 hover:after:w-full after:transition-all after:duration-300 hover:font-semibold"
+                    >
                         Features
                     </Link>
-                    <Link href="#pricing" className="hover:text-emerald-700 transition-colors duration-200 hover:scale-105 transform">
+                    <Link
+                        href="#pricing"
+                        className="relative px-2 py-1 text-lime-800/90 hover:text-lime-900 transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-lime-500 hover:after:w-full after:transition-all after:duration-300 hover:font-semibold"
+                    >
                         Pricing
                     </Link>
-                    <Link href="#about" className="hover:text-emerald-700 transition-colors duration-200 hover:scale-105 transform">
+                    <Link
+                        href="#about"
+                        className="relative px-2 py-1 text-lime-800/90 hover:text-lime-900 transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-lime-500 hover:after:w-full after:transition-all after:duration-300 hover:font-semibold"
+                    >
                         About
                     </Link>
+
+                    {/* Divider and Search Icon */}
+                    <div className="flex items-center">
+                        <div className="h-6 w-[2px] bg-lime-800/50 mx-2"></div>
+                        <button className="p-1.5 rounded-full hover:bg-lime-300/40 transition-colors duration-200 group">
+                            <svg
+                                className="w-4 h-4 text-lime-800/90 group-hover:text-lime-900 transition-colors duration-200"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2.5}
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </nav>
 
             {/* Sağdaki butonlar */}
-            <div className="flex items-center gap-3 relative z-10">
+            <div className="flex items-center gap-4 relative z-10">
                 <Link
                     href="#login"
-                    className="text-sm font-semibold text-slate-700 hover:text-emerald-700 bg-gradient-to-r from-lime-200/80 to-emerald-200/80 backdrop-blur-sm px-5 py-2.5 rounded-lg border border-emerald-300/60 hover:border-emerald-400 transition-all duration-200 hover:shadow-lg hover:bg-gradient-to-r hover:from-lime-300/90 hover:to-emerald-300/90 relative"
+                    className="text-[#C8F169] hover:text-white font-medium transition-colors duration-200"
                 >
-                    <svg className="absolute top-0 right-0 w-3 h-3" viewBox="0 0 12 12" fill="none">
-                        <path d="M12 0 L12 12 L0 0 Z" fill="#059669" opacity="0.3" />
-                    </svg>
-                    Login
+                    Log in
                 </Link>
 
                 <Link
-                    href="#signin"
-                    className="text-sm font-semibold text-slate-700 hover:text-emerald-700 bg-gradient-to-r from-emerald-200/80 to-cyan-200/80 backdrop-blur-sm px-5 py-2.5 rounded-lg border border-cyan-300/60 hover:border-cyan-400 transition-all duration-200 hover:shadow-lg hover:bg-gradient-to-r hover:from-emerald-300/90 hover:to-cyan-300/90 relative"
+                    href="#signup"
+                    className="text-[#C8F169] hover:text-white font-medium transition-colors duration-200"
                 >
-                    <svg className="absolute bottom-0 left-0 w-3 h-3" viewBox="0 0 12 12" fill="none">
-                        <path d="M0 12 L12 12 L0 0 Z" fill="#0891b2" opacity="0.3" />
-                    </svg>
-                    Sign In
+                    Sign up
                 </Link>
 
                 <Link
-                    href="#get-started"
-                    className="bg-gradient-to-r from-amber-300 via-lime-300 to-emerald-300 text-slate-800 font-bold px-6 py-2.5 rounded-lg shadow-lg text-sm hover:shadow-xl transition-all duration-200 hover:scale-105 transform relative overflow-hidden"
+                    href="#demo"
+                    className="bg-white text-[#043F2E] font-semibold px-6 py-2.5 rounded-lg hover:bg-[#C8F169] hover:text-[#043F2E] transition-all duration-200 hover:shadow-lg shadow-sm"
                 >
-                    {/* CTA button corner triangles */}
-                    <svg className="absolute top-0 right-0 w-4 h-4" viewBox="0 0 16 16" fill="none">
-                        <path d="M16 0 L16 16 L0 0 Z" fill="#065f46" opacity="0.4" />
-                    </svg>
-                    <svg className="absolute bottom-0 left-0 w-4 h-4" viewBox="0 0 16 16" fill="none">
-                        <path d="M0 16 L16 16 L0 0 Z" fill="#065f46" opacity="0.4" />
-                    </svg>
-
-                    {/* Decorative shine effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-
-                    <span className="relative z-10">Get Started</span>
+                    Book a demo
                 </Link>
             </div>
         </header>
