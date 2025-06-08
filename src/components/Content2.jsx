@@ -89,7 +89,7 @@ function Content2() {
                                     <Image
                                         src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2pkdzFnaTk1bnBwZjJwaHcyeTV5b2RpZzRpNmFlNjNzb3M0bWx1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JedTTnDTPXSmPYs/giphy.gif"
                                         alt="Animated collaboration"
-                                        className="w-full h-full object-cover rounded-xl transition-all duration-500"
+                                        className="w-full h-full object-cover rounded-xl transition-all duration-500 shadow-lg group-hover:shadow-emerald-300/50"
                                         width={800}
                                         height={800}
                                         priority
